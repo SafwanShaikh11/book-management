@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>BMW M3</title>
+</head>
+
+<body>
+  <script src="wish.js"></script>
+
+  <!-- Navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product-overview.html">Vehicles</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="wishlist.html">Wishlist</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="homepage">
+
+    <img src="myPhotos/random.jpg" alt="m3">
+
+    <div class="top-left">
+      <p>
+      <h3>The New</h3>
+      </p>
+      <p>
+      <h1>M3</h1>
+      </p>
+      <p>
+      <h2>The New BMW 3 Series MSport Sedan </h2>
+      </p>
+    </div>
+    </div>
+  </section>
+
+
+  <main>
+    <div class="description">
+      <center>
+        <p>
+
+        <h2>THE BMW 3 SERIES SEDAN M MODELS.</h2>
+        The BMW M3 is a high-performance sedan that blends thrilling power with everyday practicality.
+        Its twin-turbo inline-six engine delivers up to 503 horsepower,
+        enabling a 0-100 km/h time of 3.5 seconds in the Competition model. Known for precise handling and
+        dynamic agility,
+        it offers an exhilarating driving experience, whether on the track or city streets
+        Inside, the M3 combines luxury materials with advanced tech, making it as comfortable as it is
+        powerful. It’s the perfect balance of race car performance and daily usability.
+        </p>
+      </center>
+    </div>
+    <div class="add-to-cart" style="text-align: center; margin-top: 20px;">
+      <button onclick="add('M3')">
+        Add to Cart
+      </button>
+    </div>
+  </main>
+
+
+  <footer>
+    <p> BMW 2024 . All rights reserved.</p>
+  </footer>
+  <script src="wish.js"></script>
+  <script>
+    // Initialize the button to toggle add/remove functionality
+    document.addEventListener("DOMContentLoaded", () => {
+      const wishlistButton = document.querySelector(".add-to-cart-section button");
+      if (wishlistButton) {
+        toggleWishlistButton(wishlistButton, "M3");
+      }
+    });
+  </script>
+</body>
+
+</html>

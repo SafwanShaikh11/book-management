@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>BMW M5</title>
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product-overview.html">Vehicles</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="wishlist.html">Wishlist</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="homepage">
+
+    <img src="myPhotos/The_M4.jpg" alt="M5">
+
+    <div class="top-left">
+      <p>
+
+      <h3>The New</h3>
+      </p>
+      <p>
+      <h1>M5</h1>
+      </p>
+    </div>
+  </section>
+
+  <main>
+
+    <div class="description">
+      <center>The BMW M5 is a high-performance luxury sedan that combines cutting-edge technology with thrilling driving
+        dynamics. Powered by a formidable<b> V8 engine,</b> it delivers exceptional acceleration and speed, making it
+        one of
+        the fastest sedans on the road. The M5 features BMW’s renowned M xDrive system, providing superior handling and
+        agility, whether on the track or city streets. Inside, the M5 offers a refined cabin with advanced infotainment
+        and premium materials, ensuring a comfortable and connected driving experience. With its blend of luxury, power,
+        and precision, the BMW M5 stands as a benchmark in the world of sports sedans.</center>
+
+    </div>
+    <!-- Add to Cart Button -->
+    <div class="add-to-cart-section" style="text-align: center; margin-top: 20px;">
+      <button onclick="addToCart()">
+        Add to Cart
+      </button>
+  </main>
+  <footer>
+    <p> BMW 2024 . All rights reserved.</p>
+  </footer>
+
+  <script src="wish.js"></script>
+  <script>
+
+    // Initialize the button to toggle add/remove functionality
+    document.addEventListener("DOMContentLoaded", () => {
+      const wishlistButton = document.querySelector(".add-to-cart-section button");
+      if (wishlistButton) {
+        toggleWishlistButton(wishlistButton, "M5");
+      }
+    });
+  </script>
+</body>
+
+</html>

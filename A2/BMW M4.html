@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>BMW M4</title>
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product-overview.html">Vehicles</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="wishlist.html">Wishlist</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="homepage">
+
+    <img src="myPhotos/Black_BMW-M4.jpeg" alt="M4">
+
+    <div class="top-left">
+      <p>
+      <h3>The </h3>
+      </p>
+      <p>
+      <h1>M4 (G80)</h1>
+      </p>
+      <p>
+      <h2>The BMW M4 Coupe`& xDrive Sedan </h2>
+      </p>
+    </div>
+  </section>
+
+  <main>
+    <div class="description">
+
+      The BMW M4 is a high-performance coupe that combines sleek design with thrilling power.
+      Its twin-turbo inline-six engine produces up to 503 horsepower, launching it from 0-100 km/h
+      in 3.4 seconds.
+      With precise handling and an adaptive suspension, it offers an exhilarating driving experience.
+      Inside, the M4 features luxurious materials and advanced technology, making it as comfortable as it is
+      sporty.
+      It’s a perfect balance of track-ready performance and everyday usability.
+    </div>
+    <!-- Add to Cart Button -->
+    <div class="add-to-cart" style="text-align: center; margin-top: 20px;">
+      <button onclick="add('M4')">
+        Add to Cart
+      </button>
+    </div>
+  </main>
+  <footer>
+    <p> BMW 2024 . All rights reserved.</p>
+  </footer>
+
+  <script src="wish.js"></script>
+  <script>
+    // Initialize the button to toggle add/remove functionality
+    document.addEventListener("DOMContentLoaded", () => {
+      const wishlistButton = document.querySelector(".add-to-cart-section button");
+      if (wishlistButton) {
+        toggleWishlistButton(wishlistButton, "M4");
+      }
+    });
+  </script>
+</body>
+
+</html>

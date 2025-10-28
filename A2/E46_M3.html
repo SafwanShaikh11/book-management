@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>M3 E46</title>
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product-overview.html">Vehicles</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="wishlist.html">Wishlist</a></li>
+    </ul>
+  </nav>
+
+  <section class="homepage">
+    <img src="myPhotos/E90_M3-GTR.jpg" alt="E90_M3-GTR">
+
+    <div class="top-left">
+      <p>
+      <h2>The </h2>
+      </p>
+      <p>
+      <h1>Legendary E46 M3 GTR</h1>
+      </p>
+    </div>
+  </section>
+
+  <main>
+    <div class="description">
+      <center>
+        The <b>E46 M3 GTR</b> is a legendary race car developed by BMW for the <b>American Le Mans Series (ALMS) in
+          2001</b>.
+        It stands out with a powerful <b>4.0-liter V8 engine (P60B40)</b>, a significant departure from the standard E46
+        M3's inline-six engine.
+        The GTR featured extensive weight reduction, widebody aerodynamics, and enhanced track performance.
+        A few street-legal versions were produced to meet racing regulations, making them extremely rare.
+        The E46 M3 GTR is celebrated for its dominance on the track and remains one of the most iconic BMW race cars in
+        history.
+      </center>
+    </div>
+
+    <!-- Add to Cart Button -->
+    <!-- Add to Cart Button -->
+    <div class="add-to-cart" style="text-align: center; margin-top: 20px;">
+      <button onclick="add('E46_M3')">
+        Add to Cart
+      </button>
+    </div>
+
+  </main>
+
+  <footer>
+    <p> BMW 2024 . All rights reserved.</p>
+  </footer>
+
+  <script src="wish.js"></script>
+  <script>
+    // Initialize the button to toggle add/remove functionality
+    document.addEventListener("DOMContentLoaded", () => {
+      const wishlistButton = document.querySelector(".add-to-cart button");
+      if (wishlistButton) {
+        toggleWishlistButton(wishlistButton, "E46 M3");
+      }
+    });
+  </script>
+</body>
+
+</html>

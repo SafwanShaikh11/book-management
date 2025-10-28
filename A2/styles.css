@@ -1,0 +1,211 @@
+* {
+  padding-bottom: 40px;
+}
+
+/* Style for navigation bar */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  font-family: "Agdasima", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  color: rgb(4, 4, 4);
+  text-align: center;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: transparent;
+  transition: background-image 0.3s ease-in-out;
+  color: #100f0f;
+}
+
+/* Product list styling */
+.product-list {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+  margin: 20px;
+  padding: 0;
+}
+
+.description {
+  color: aliceblue;
+  text-align: center;
+}
+
+body {
+  padding-bottom: 9px;
+  background-color: #100f0f;
+
+}
+
+.v {
+  color: wheat;
+}
+
+.product {
+  background-color: black;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.faq {
+
+  color: whitesmoke
+}
+
+
+
+.product img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product img:hover {
+  transform: scale(1.05);
+}
+
+.product p {
+  position: absolute;
+  top: auto;
+  bottom: 20px;
+  left: 20px;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Homepage Image Section */
+.homepage {
+  width: 100%;
+  height: 100vh;
+  color: whitesmoke;
+  overflow: hidden;
+  position: relative;
+}
+
+.homepage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Top-left text */
+.top-left {
+  position: absolute;
+  top: 4%;
+  left: 0%;
+  color: rgb(252, 247, 247);
+}
+
+.top-left h1 {
+  font-family: "Agdasima", sans-serif;
+  margin: 0;
+  font-size: 3rem;
+  text-align: left;
+}
+
+/* Footer */
+footer {
+
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 5.5px 0;
+
+  font-size: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .product img {
+    width: 90%;
+  }
+}
+
+.wishlist-container {
+  color: rgb(60, 227, 127);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+/* Styling each wishlist item */
+.wishlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #444;
+  /* Slightly lighter than the container */
+  border-radius: 5px;
+}
+
+/* Remove button styling */
+.wishlist-item button {
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  /* Red for delete button */
+  color: white;
+  border: none;
+  border-radius: 2.1px;
+  cursor: pointer;
+}
+
+.wishlist-item button:hover {
+  background-color: #c0392b;
+  /* Darker red on hover */
+}
+
+.contact {
+  color: white;
+}
+
+.wish {
+  color: whitesmoke;
+}
